@@ -158,20 +158,6 @@ prob, pred = predict_sequence(seq)
 print(f"Probability: {prob:.4f}, Prediction: {'Positive' if pred else 'Negative'}")
 ```
 
-## Results
-
-The following table compares the original PSPI (LSTM + hand‑crafted features) with ESM‑PSPI (ESM‑2 + logistic regression) on the same dataset. Values are averages over 12 random subsamples (1000 positive / 1000 negative each).
-
-| Metric        | PSPI (LSTM) | ESM‑PSPI (ours) |
-|---------------|-------------|-----------------|
-| AUROC         | 0.931       | **0.952**       |
-| AUPRC         | 0.938       | **0.961**       |
-| F1 score      | 0.851       | **0.873**       |
-| Precision     | 0.863       | **0.881**       |
-| Sensitivity   | 0.842       | **0.867**       |
-| Specificity   | 0.874       | **0.889**       |
-
-*Note: These numbers are illustrative; exact results may vary with random seeds and dataset splits.*
 
 ### Visualisation
 

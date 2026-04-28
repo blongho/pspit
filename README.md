@@ -5,6 +5,8 @@ This repository contains two approaches for identifying small prokaryotic protei
 - **PSPI** – the original LSTM‑based model with hand‑crafted features (one‑hot encoding + gap dimers).  
 - **PSPIT** – a Transformer‑based version using a frozen ESM‑2 protein language model followed by a logistic regression classifier.
 
+![Figure comparing the modesl](figures/model-comparison.png)
+
 ## Key Differences
 
 | Aspect | PSPI | PSPIT |
